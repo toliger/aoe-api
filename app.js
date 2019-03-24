@@ -17,9 +17,27 @@ const typeDefs = gql`
     register(email: String!, password: String!): String
   }
 
+  type Player {
+    id: String
+  }
+
+  type Lobby {
+    id: String
+    name: String
+    players: [Player]
+  }
+
+  type Game {
+    id: String
+    name: String
+    players: [Player]
+  }
+
   type Query {
     me: User
     user(id: String): User
+    lobbies: [Lobby]
+    game(id: String): Game
   }
 `;
 

@@ -5,6 +5,11 @@ const User = bookshelf.Model.extend({
   tableName: "users",
 });
 
+const Game = bookshelf.Model.extend({
+  tableName: "game",
+});
+
 module.exports = {
   User,
+  Game,
 };
