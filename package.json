@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "migrate": "./node_modules/knex/bin/cli.js migrate:latest",
     "rollback": "./node_modules/knex/bin/cli.js migrate:rollback"
